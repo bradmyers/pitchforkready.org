@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PitchforkReady.org – Authoritarian Early-Warning Scorecard</title>
+  <meta name="description" content="Interactive scorecard for tracking early warning indicators of authoritarianism in modern democracies." />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📉</text></svg>">
+</head>
+<body>
+<header class="site-header">
+  <h1><a href="/">PitchforkReady.org</a></h1>
+  <nav>
+    <button class="nav-btn" data-target="about">About</button>
+    <button class="nav-btn" data-target="matrix">Historic Matrix</button>
+    <button class="nav-btn" data-target="scorecard">Build Your Score</button>
+    <button class="nav-btn" data-target="downloads">Downloads</button>
+  </nav>
+</header>
+
+<main id="app">
+  <!-- ABOUT -->
+  <section id="about" class="view visible">
+    <h2>The Dictator Playbook → Democratic Early-Warning System</h2>
+    <p>This project translates 15 recurring authoritarian tactics into measurable Early‑Warning Indicators (EWIs) for modern democracies. Use the scorecard to rate countries and visualize risk trends over time.</p>
+
+    <h3>The 15 Tactics</h3>
+    <ul id="tactic-list"></ul>
+
+    <p class="note">Need help? Hover over any tactic label in the scorecard for definitions and tripwires.</p>
+  </section>
+
+  <!-- MATRIX -->
+  <section id="matrix" class="view">
+    <h2>Historical Reference Matrix</h2>
+    <p>These scores (✓=3, P=2, –=0) are rough heuristics based on scholarly consensus and reporting. They’re here as a reference—not gospel. Adjust or create your own!</p>
+    <div id="matrix-table-wrapper"></div>
+  </section>
+
+  <!-- SCORECARD -->
+  <section id="scorecard" class="view">
+    <h2>Interactive Scorecard</h2>
+
+    <form id="score-form">
+      <div class="form-row">
+        <label for="country-name">Country / Entity</label>
+        <input id="country-name" type="text" placeholder="e.g., United States (2025-07)" required />
+      </div>
+
+      <div class="form-row">
+        <label for="date-field">Date (YYYY-MM)</label>
+        <input id="date-field" type="month" required />
+      </div>
+
+      <div class="tactics-grid" id="tactics-grid">
+        <!-- sliders injected here -->
+      </div>
+
+      <div class="form-row actions">
+        <button type="submit" class="primary">Add / Update Row</button>
+        <button type="button" id="reset-form" class="secondary">Reset Form</button>
+      </div>
+    </form>
+
+    <h3>Your Dataset</h3>
+    <div class="table-tools">
+      <button id="export-csv" class="secondary">Export CSV</button>
+      <button id="clear-data" class="danger">Clear All Local Data</button>
+    </div>
+    <div id="user-table-wrapper"></div>
+  </section>
+
+  <!-- DOWNLOADS -->
+  <section id="downloads" class="view">
+    <h2>Downloads & Repo Info</h2>
+    <ul>
+      <li><a href="README.md" target="_blank">README.md</a></li>
+      <li><a href="LICENSE" target="_blank">LICENSE (MIT)</a></li>
+      <li><a id="csv-download-link" download="pitchforkready-data.csv" href="#">Your CSV (generated)</a> <small>(click after exporting)</small></li>
+    </ul>
+    <p>Host on GitHub Pages: push this repo, then enable Pages in settings. Your site will be live at <code>https://&lt;username&gt;.github.io/pitchforkready.org/</code>. Point the custom domain <strong>pitchforkready.org</strong> to it via a CNAME file or DNS A/ALIAS to GitHub.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>© 2025 PitchforkReady.org. Content released under <a href="LICENSE" target="_blank">MIT</a>. Built with vanilla JS & CSS. No trackers. No cookies. Just pitchforks.</p>
+</footer>
+
+<script src="data/tactics.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
