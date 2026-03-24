@@ -1,6 +1,6 @@
 # PitchforkReady.org
 
-An interactive, client-side scorecard to track **Early‑Warning Indicators of Authoritarianism** based on a 15‑tactic “dictator playbook.”
+An interactive, client-side scorecard to track **Early‑Warning Indicators of Authoritarianism** based on a 15‑tactic  dictator playbook.
 
 ## Features
 
@@ -10,4 +10,3 @@ An interactive, client-side scorecard to track **Early‑Warning Indicators of A
 - **No Backend Needed**: Pure HTML/CSS/JS. Works on GitHub Pages.
 
 ## File Layout
-

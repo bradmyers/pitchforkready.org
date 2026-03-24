@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>pitchforkready.org | Independent Movement</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Inter:wght@300..700&amp;family=Work+Sans:wght@300..600&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary": "#404141",
+              "on-background": "#131d21",
+              "error-container": "#ffdad6",
+              "on-surface": "#131d21",
+              "secondary-fixed": "#f7dfb8",
+              "on-tertiary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-secondary-fixed": "#251a02",
+              "primary-fixed": "#d9e4e9",
+              "primary-container": "#4f5a5e",
+              "tertiary-fixed-dim": "#c7c6c6",
+              "primary": "#384346",
+              "on-tertiary-fixed": "#1b1c1c",
+              "inverse-on-surface": "#e7f3f7",
+              "surface-bright": "#f1fbff",
+              "tertiary-container": "#585858",
+              "surface-container-highest": "#d9e4e9",
+              "secondary-container": "#f4ddb5",
+              "on-error": "#ffffff",
+              "surface-dim": "#d0dce0",
+              "surface": "#f1fbff",
+              "primary-fixed-dim": "#bdc8cd",
+              "on-error-container": "#93000a",
+              "outline-variant": "#c3c7c9",
+              "outline": "#73787a",
+              "on-secondary": "#ffffff",
+              "on-primary-fixed": "#131d21",
+              "surface-variant": "#d9e4e9",
+              "secondary-fixed-dim": "#dac49d",
+              "on-secondary-container": "#726041",
+              "surface-container-low": "#eaf5fa",
+              "on-primary-container": "#c5d1d5",
+              "tertiary-fixed": "#e3e2e2",
+              "secondary": "#6d5c3d",
+              "surface-container-high": "#dfeaef",
+              "on-primary-fixed-variant": "#3e484c",
+              "on-secondary-fixed-variant": "#544527",
+              "inverse-surface": "#273236",
+              "surface-tint": "#556064",
+              "surface-container": "#e4f0f4",
+              "error": "#ba1a1a",
+              "on-surface-variant": "#434749",
+              "on-tertiary-fixed-variant": "#464747",
+              "on-primary": "#ffffff",
+              "on-tertiary-container": "#cfcece",
+              "background": "#f1fbff",
+              "inverse-primary": "#bdc8cd",
+              "accent-pop": "#E6A52E"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Work Sans"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .manifesto-gradient {
+        background: linear-gradient(135deg, #384346 0%, #4F5A5E 100%);
+      }
+      .glass-effect {
+        backdrop-filter: blur(20px);
+      }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary selection:text-white">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#384346]/80 backdrop-blur-md dark:bg-[#1a1f20]/80">
+<div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto w-full">
+<div class="text-2xl font-black text-[#384346] dark:text-[#f1f1f1] uppercase tracking-tighter font-headline">
+                pitchforkready.org
+            </div>
+<div class="hidden md:flex items-center gap-10">
+<a class="text-[#384346] dark:text-[#cbd5e1] font-medium font-label uppercase tracking-widest text-[0.6875rem] hover:text-[#6D5C3D] transition-colors duration-300" href="#principles">Principles</a>
+<a class="text-[#384346] dark:text-[#cbd5e1] font-medium font-label uppercase tracking-widest text-[0.6875rem] hover:text-[#6D5C3D] transition-colors duration-300" href="#mission">Mission</a>
+<a class="text-[#384346] dark:text-[#cbd5e1] font-medium font-label uppercase tracking-widest text-[0.6875rem] hover:text-[#6D5C3D] transition-colors duration-300" href="#pledge">The Pledge</a>
+<a class="text-[#384346] dark:text-[#cbd5e1] font-medium font-label uppercase tracking-widest text-[0.6875rem] hover:text-[#6D5C3D] transition-colors duration-300" href="#disclaimer">Disclaimer</a>
+</div>
+<button class="bg-secondary text-on-secondary px-6 py-2.5 font-headline font-bold uppercase tracking-tight text-sm hover:bg-primary-container transition-all duration-150 active:scale-95">
+                Join Movement
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative h-screen flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Historical architectural details of a majestic government building at dusk" class="w-full h-full object-cover brightness-[0.35]" data-alt="Monolithic stone columns of a historic capital building under a dramatic, moody sunset with deep shadows and industrial textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHpSHVJgKzjEuOnjn1ui0Qj7gasBbecAXqhWLqzuuyQXxSScKFHmtmJcCDLS8v-iUTG-f9jD1FIUYB_AhwZFT9gRu4K8qegUHbNtpLgOqNo08Pwuxeq_j1br_09jrGhKQSDiZdGFdM2PjPksjBDJCDb4NXgWkTo7dFtdIANPrIN9TY3PS1qCpCn6ePngSMNMjQiKJikfI5PbCUUn-xhpb7YlmfwvQQuBcYIk-cPuVg-FBJzbtMgpv35cFcXkpnmHzIr-KrlDYLHfc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-screen-2xl mx-auto px-8 w-full">
+<div class="max-w-4xl">
+<span class="inline-block bg-secondary px-4 py-1 text-white font-label text-[0.6875rem] uppercase tracking-[0.2em] mb-8">Status: Independent</span>
+<h1 class="font-headline font-bold text-6xl md:text-8xl lg:text-[7rem] leading-[0.9] tracking-tighter text-white mb-10">
+                    The Future of Our Democracy <span class="text-accent-pop">Starts Here.</span>
+</h1>
+<p class="text-xl md:text-2xl text-primary-fixed-dim max-w-2xl font-light mb-12 border-l-4 border-secondary pl-8">
+                    We are building a foundation of architectural activism. No corporate money. No party lines. Just systemic repair for the modern age.
+                </p>
+<div class="flex flex-wrap gap-6">
+<a class="px-8 py-4 bg-white text-primary font-headline font-black uppercase tracking-tight flex items-center gap-3 hover:bg-secondary hover:text-white transition-colors" href="#principles">
+                        Read the Manifesto
+                        <span class="material-symbols-outlined">arrow_downward</span>
+</a>
+</div>
+</div>
+</div>
+</header>
+<!-- Mission Section -->
+<section class="py-24 bg-surface" id="mission">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+<div class="lg:col-span-7">
+<h2 class="font-headline font-black text-5xl md:text-7xl uppercase tracking-tighter text-primary mb-8">
+                        The Mission
+                    </h2>
+<p class="text-2xl md:text-3xl font-body leading-relaxed text-on-surface-variant font-light">
+                        Our focus is singular: <span class="text-primary font-bold">Systemic Change.</span> We believe transparency is the only currency that matters in a digital democracy. pitchforkready.org exists to catalyze a non-partisan overhaul of the structures that currently favor the few over the many.
+                    </p>
+</div>
+<div class="lg:col-span-5">
+<div class="bg-surface-container-high p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-9xl">account_balance</span>
+</div>
+<h3 class="font-headline font-bold text-xl uppercase tracking-widest text-secondary mb-6">Guiding Truth</h3>
+<p class="text-on-surface-variant font-medium leading-loose">
+                            "A democracy is only as strong as its least influential voice. When money speaks louder than people, the architecture is broken."
+                        </p>
+<div class="mt-8 pt-8 border-t border-outline-variant">
+<div class="flex items-center gap-4">
+<div class="w-12 h-1 bg-secondary"></div>
+<span class="font-label text-[0.6875rem] uppercase tracking-widest">Architectural Activism</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Principles Grid -->
+<section class="py-24 bg-primary text-white" id="principles">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline font-black text-6xl uppercase tracking-tighter mb-4">Five Core Principles</h2>
+<p class="text-primary-fixed-dim text-lg">The structural pillars of our movement. Non-negotiable, non-partisan, and absolutely necessary.</p>
+</div>
+<div class="text-secondary font-headline font-bold text-9xl leading-none opacity-20 hidden lg:block">05</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-0.5 bg-primary-container/20">
+<!-- Principle 1 -->
+<div class="bg-primary p-10 hover:bg-primary-container transition-colors group">
+<div class="mb-10 text-secondary">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">gavel</span>
+</div>
+<h3 class="font-headline font-bold text-2xl uppercase tracking-tight mb-6 group-hover:text-secondary-fixed transition-colors">Abolish Citizens United</h3>
+<p class="text-sm leading-relaxed text-primary-fixed-dim font-light">End the era where money is considered free speech. Corporations are not people; their influence must be decoupled from the ballot box.</p>
+</div>
+<!-- Principle 2 -->
+<div class="bg-primary p-10 hover:bg-primary-container transition-colors group border-l border-primary-container/30">
+<div class="mb-10 text-secondary">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">visibility_off</span>
+</div>
+<h3 class="font-headline font-bold text-2xl uppercase tracking-tight mb-6 group-hover:text-secondary-fixed transition-colors">Abolish The Patriot Act</h3>
+<p class="text-sm leading-relaxed text-primary-fixed-dim font-light">Restore the fundamental right to privacy. Systemic surveillance is the antithesis of a free and open society.</p>
+</div>
+<!-- Principle 3 -->
+<div class="bg-primary p-10 hover:bg-primary-container transition-colors group border-l border-primary-container/30">
+<div class="mb-10 text-secondary">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">trending_up</span>
+</div>
+<h3 class="font-headline font-bold text-2xl uppercase tracking-tight mb-6 group-hover:text-secondary-fixed transition-colors">No Individual Stock Ownership</h3>
+<p class="text-sm leading-relaxed text-primary-fixed-dim font-light">Congress and their families must be barred from individual stock ownership to eliminate conflicts of interest in policy making.</p>
+</div>
+<!-- Principle 4 -->
+<div class="bg-primary p-10 hover:bg-primary-container transition-colors group border-l border-primary-container/30">
+<div class="mb-10 text-secondary">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">map</span>
+</div>
+<h3 class="font-headline font-bold text-2xl uppercase tracking-tight mb-6 group-hover:text-secondary-fixed transition-colors">Abolish Gerrymandering</h3>
+<p class="text-sm leading-relaxed text-primary-fixed-dim font-light">Districts must be drawn by independent commissions. Voters should choose their politicians, not the other way around.</p>
+</div>
+<!-- Principle 5 -->
+<div class="bg-primary p-10 hover:bg-primary-container transition-colors group border-l border-primary-container/30">
+<div class="mb-10 text-secondary">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">security</span>
+</div>
+<h3 class="font-headline font-bold text-2xl uppercase tracking-tight mb-6 group-hover:text-secondary-fixed transition-colors">Prevent Insurrections</h3>
+<p class="text-sm leading-relaxed text-primary-fixed-dim font-light">Strengthen legal frameworks to protect the peaceful transfer of power and ensure accountability for those who threaten democratic stability.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Candidate Accountability Section -->
+<section class="py-24 bg-white" id="pledge">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-6">
+<h2 class="font-headline font-black text-5xl md:text-7xl uppercase tracking-tighter text-primary mb-10">The Candidate Pledge</h2>
+<div class="space-y-8">
+<p class="text-2xl font-body leading-relaxed text-on-surface-variant">
+                        Our goal is <span class="text-primary font-bold">100% buy-in</span> from candidates who agree to implement these 5 actions as their top 5 priorities. We believe these core structural changes are the fundamental path to fixing the country.
+                    </p>
+<div class="bg-error-container p-8 border-l-8 border-error">
+<div class="flex gap-4 items-start">
+<span class="material-symbols-outlined text-error text-3xl">warning</span>
+<div>
+<h4 class="font-headline font-bold text-error uppercase tracking-widest text-sm mb-2">Zero Tolerance Policy</h4>
+<p class="text-on-error-container font-medium text-sm">Any candidate who deviates from these 5 core principles as their primary actions will be ineligible for movement approval and will be publicly flagged.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="lg:col-span-6">
+<div class="border-2 border-primary p-10">
+<h3 class="font-headline font-bold text-2xl uppercase tracking-widest text-primary mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined">verified</span>
+                        Verified Candidates
+                    </h3>
+<div class="space-y-6">
+<!-- Example Entry -->
+<div class="flex items-center justify-between py-4 border-b border-outline-variant">
+<div>
+<div class="font-headline font-bold text-lg">Waiting for First Signatory</div>
+<div class="font-label text-[0.6875rem] uppercase text-outline">District / Office Pending</div>
+</div>
+<span class="text-outline-variant italic text-sm">Awaiting Verification</span>
+</div>
+<!-- Empty state style list -->
+<div class="bg-surface-container p-6 text-center border-2 border-dashed border-outline-variant">
+<p class="text-sm text-on-surface-variant uppercase font-label tracking-widest">Accepting digital signature applications</p>
+<button class="mt-4 px-6 py-2 bg-primary text-white font-headline font-bold uppercase tracking-tight text-xs hover:bg-secondary transition-colors">Submit Pledge Application</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Transparency/Disclaimer Section -->
+<section class="py-32 bg-secondary-container" id="disclaimer">
+<div class="max-w-4xl mx-auto px-8 text-center">
+<span class="material-symbols-outlined text-6xl text-secondary mb-8">security_update_good</span>
+<h2 class="font-headline font-black text-5xl md:text-6xl uppercase tracking-tighter text-on-secondary-container mb-10">Pure Independence</h2>
+<div class="space-y-6 text-xl md:text-2xl text-on-secondary-fixed-variant font-medium leading-relaxed">
+<p>This is an independent movement portal.</p>
+<p class="bg-secondary text-white inline-block px-4 py-1">We do not want your data.</p>
+<p class="bg-primary text-white inline-block px-4 py-1">We do not want your money.</p>
+<p>We are a self-funded collective dedicated to the dissemination of information and the coordination of grass-roots systemic pressure. No cookies. No tracking. No compromise.</p>
+</div>
+</div>
+</section>
+<!-- Action Canvas (Bento) -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-screen-2xl mx-auto px-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="md:col-span-2 bg-surface-container-lowest p-12 flex flex-col justify-between min-h-[400px]">
+<div>
+<h3 class="font-headline font-bold text-4xl uppercase tracking-tight mb-6">Take the Movement to Your Community</h3>
+<p class="text-lg text-on-surface-variant max-w-xl mb-12">Download our independent advocacy toolkit. It contains non-partisan educational resources designed to foster local discussion and regional mobilization.</p>
+</div>
+<button class="w-fit px-8 py-4 bg-primary text-white font-headline font-bold uppercase tracking-widest text-sm hover:bg-secondary transition-colors">Get the Toolkit</button>
+</div>
+<div class="bg-primary text-white p-12 manifesto-gradient flex flex-col justify-center text-center">
+<span class="material-symbols-outlined text-5xl mb-6">diversity_3</span>
+<h4 class="font-headline font-bold text-2xl uppercase mb-4">Join the Discord</h4>
+<p class="text-primary-fixed-dim mb-8">Direct community coordination. No gatekeepers.</p>
+<button class="w-full py-4 border border-white/20 hover:bg-white hover:text-primary transition-colors font-headline uppercase font-bold tracking-widest text-sm">Enter Community</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#384346] dark:bg-[#0e1112] w-full py-12 px-8 border-t border-[#4F5A5E]/20">
+<div class="flex flex-col md:flex-row justify-between items-center gap-6 w-full max-w-screen-2xl mx-auto">
+<div class="text-lg font-bold text-white font-headline">pitchforkready.org</div>
+<div class="text-[#f1f1f1] font-['Work_Sans'] text-[0.6875rem] uppercase tracking-widest text-center md:text-left">
+                © 2024 pitchforkready.org | Independent Movement. No data collection. No solicitations.
+            </div>
+<div class="flex gap-8">
+<a class="text-[#4F5A5E] font-['Work_Sans'] text-[0.6875rem] uppercase tracking-widest hover:text-[#6D5C3D] transition-colors opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-[#4F5A5E] font-['Work_Sans'] text-[0.6875rem] uppercase tracking-widest hover:text-[#6D5C3D] transition-colors opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="text-[#4F5A5E] font-['Work_Sans'] text-[0.6875rem] uppercase tracking-widest hover:text-[#6D5C3D] transition-colors opacity-80 hover:opacity-100" href="#">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>
